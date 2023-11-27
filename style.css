@@ -17,7 +17,6 @@ ul, li { margin: 0; padding-left: 0; list-style:none ;}
 .header__logo{
     height: 130px;
     align-items: flex-end;
-    margin-left: 6%;
 }
 
 .header__info{
@@ -55,15 +54,25 @@ ul, li { margin: 0; padding-left: 0; list-style:none ;}
     justify-content: space-around;
     align-items: flex-end;
 }
-.menu{
+.menu {
     display: inline;
     padding-right: 20px;
     position: relative;
 }
+li{
+    display: block;
+}
+.menu li:hover{
+    color: #0083ca;
+}
 .podmenu{
     position: absolute;
-    display:none;
-    z-index: 10;
+      left: 0;
+      width: 150px;
+      display: none; 
+}
+menu li:hover>.podmenu{
+    display: initial;
 }
 .info__network{
     display: flex;
@@ -82,10 +91,7 @@ ul, li { margin: 0; padding-left: 0; list-style:none ;}
     justify-content: space-around;
     align-items: center;
 }
-.footer__menu li{
-    height: 55px;
-    padding-right: 10px;
-    display: inline;
+.footer__menu {
 }
 .footer__menu{
     margin-left: 4%;
