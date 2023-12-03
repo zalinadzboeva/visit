@@ -56,12 +56,29 @@ ul, li { margin: 0; padding-left: 0; list-style:none ;}
 }
 .menu__item{
     position: relative;
-    display: inline;
+    display: inline-flex;
+    padding-left: 20px;
+}
+.menu__item:hover{
+    color: #0083ca;
 }
 .menu__dropdown{
     position: absolute;
-    display:none;
     z-index: 10;
+    margin-top: 20px;
+    margin-left: auto;
+    color: #fff;
+    background-color:#44a5d9;
+    display: none;
+}
+.menu__dropdown-item{
+    display: block;
+    height: 22px;
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;  
+    border-bottom: 1px rgba(225, 225, 225, 0.3) solid;
+    width: 210px;
 }
 .menu__item:hover .menu__dropdown{
     display: block;
