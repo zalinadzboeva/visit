@@ -47,32 +47,24 @@ ul, li { margin: 0; padding-left: 0; list-style:none ;}
     font-weight:400;
     padding-right: 20px;
 }
-.novigation{
+.navigation{
     height: 55px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: flex-end;
 }
-.menu {
-    display: inline;
-    padding-right: 20px;
+.menu__item{
     position: relative;
+    display: inline;
 }
-li{
-    display: block;
-}
-.menu li:hover{
-    color: #0083ca;
-}
-.podmenu{
+.menu__dropdown{
     position: absolute;
-      left: 0;
-      width: 150px;
-      display: none; 
+    display:none;
+    z-index: 10;
 }
-menu li:hover>.podmenu{
-    display: initial;
+.menu__item:hover .menu__dropdown{
+    display: block;
 }
 .info__network{
     display: flex;
@@ -86,7 +78,7 @@ menu li:hover>.podmenu{
     height: 130px;
     font-size: 20px;
     font-weight:400;
-    margin-top: 30px;
+    margin-top: 3000px;
     display: flex;
     justify-content: space-around;
     align-items: center;
