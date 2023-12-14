@@ -130,3 +130,95 @@ ul, li { margin: 0; padding-left: 0; list-style:none ;}
 .footer__email{
     color: #0083ca;
 }
+@media (max-width: 320px){
+    .header{
+        height: 70px;
+        width: 320px;
+    }
+    .header__logo{
+        height: 25px;
+        width: 144px;
+        align-items: center;
+    }
+    
+    .header__info{
+        height: 12px;
+    }
+    .info__conection{
+        height: 12px;
+        font-size: 7px;
+    }
+    .info__img{
+        height: 12px;
+        padding: 0px 2px;
+    }
+    .contact__info{
+        height: 25px;
+    }
+    .contact{
+        font-weight:400;
+        padding-right: 20px;
+    }
+    .navigation{
+        height: 13px;
+
+    }
+    .menu__item{
+        padding-left: 10px;
+        font-size: 7px;
+    }
+    .menu__item:hover{
+        color: #0083ca;
+    }
+    .menu__dropdown{
+        margin-top: 7px;
+    }
+    .menu__dropdown-item{
+        height: 22px;
+        padding: 5px;
+        font-size: 7px;  
+        border-bottom: 1px rgba(225, 225, 225, 0.3) solid;
+        width: 210px;
+    }
+    
+    .footer{
+        width: 100%;
+        height: 130px;
+        font-size: 20px;
+        font-weight:400;
+        margin-top: 3000px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer__menu {
+    }
+    .footer__menu{
+        margin-left: 4%;
+    }
+    .footer__logo{
+        height: 130px;
+        
+    }
+    .footer__info{
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        margin-left: 100px;
+    }
+    .footer__img{
+        height: 23px;
+    }
+    .footer__conection{
+        display: flex;
+        flex-direction: column;
+    }
+    .conact__footer{
+        margin-top: 10px;
+    }
+    .footer__email{
+        color: #0083ca;
+    }
+}
